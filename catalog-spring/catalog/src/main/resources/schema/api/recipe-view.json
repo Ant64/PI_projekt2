@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "recipeId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "difficultyPerforming": {
+      "type": "string"
+    },
+    "dishType": {
+      "type": "string"
+    },
+    "dishIngredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "$ref": "comment-view.json"
+      }
+    },
+    "hoursDuration": {
+      "type": "number"
+    },
+    "minutesDuration": {
+      "type": "number"
+    }
+  }
+}

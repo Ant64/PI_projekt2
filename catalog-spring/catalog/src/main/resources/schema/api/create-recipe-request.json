@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "difficultyPerforming": {
+      "type": "object",
+      "existingJavaType": "pl.piotr.catalog.domain.recipe.DifficultyPerforming"
+    },
+    "dishType": {
+      "type": "object",
+      "existingJavaType": "pl.piotr.catalog.domain.recipe.DishType"
+    },
+    "dishIngredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "existingJavaType": "pl.piotr.catalog.domain.recipe.DishIngredient"
+      }
+    },
+    "hoursDuration": {
+      "type": "number"
+    },
+    "minutesDuration": {
+      "type": "number"
+    }
+  }
+}

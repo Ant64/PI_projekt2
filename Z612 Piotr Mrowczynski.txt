@@ -1,0 +1,4 @@
+login: admin
+haslo: admin
+
+'npm install' - to install dependencies (angular)
